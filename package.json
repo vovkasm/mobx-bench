@@ -17,7 +17,9 @@
   "author": "Vladimir Timofeev <vovkasm@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@tsconfig/bun": "^1.0.1",
     "@tsconfig/node-lts": "^18.12.5",
-    "@tsconfig/node20": "^20.1.2"
+    "@tsconfig/node20": "^20.1.2",
+    "bun-types": "^1.0.11"
   }
 }
