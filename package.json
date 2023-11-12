@@ -15,5 +15,9 @@
   ],
   "main": "index.js",
   "author": "Vladimir Timofeev <vovkasm@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node-lts": "^18.12.5",
+    "@tsconfig/node20": "^20.1.2"
+  }
 }

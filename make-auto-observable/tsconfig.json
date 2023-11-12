@@ -1,13 +1,9 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../tsconfig-base.json",
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist",
-    "target": "es2016",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "strict": true,
-    "declaration": true,
-    "useDefineForClassFields": true,
   },
   "include": ["src/**/*"],
 }
