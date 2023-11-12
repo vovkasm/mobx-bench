@@ -6,7 +6,11 @@
     "build": "npm run build --workspaces",
     "bench": "npm run bench --workspace=runner"
   },
-  "workspaces": ["./make-auto-observable", "./runner"],
+  "workspaces": [
+    "./decorators",
+    "./make-auto-observable",
+    "./runner"
+  ],
   "main": "index.js",
   "author": "Vladimir Timofeev <vovkasm@gmail.com>",
   "license": "MIT"

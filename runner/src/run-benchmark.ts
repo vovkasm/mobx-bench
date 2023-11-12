@@ -1,10 +1,14 @@
 import Benchmark from "benchmark";
 
-import { benchConstruction } from '@mobx-bench/make-auto-observable';
+import * as benchmarkAutoObservable from '@mobx-bench/make-auto-observable';
+import * as benchmarkDecorators from '@mobx-bench/decorators';
 
 const suite = new Benchmark.Suite();
 suite.add('make-auto-observable', () => {
-  benchConstruction(100);
+  benchmarkAutoObservable.benchConstruction(100);
+})
+.add('decorators', () => {
+  benchmarkDecorators.benchConstruction(100);
 })
 .on('cycle', function(event: any) {
   console.log(String(event.target));
