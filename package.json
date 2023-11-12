@@ -7,6 +7,7 @@
     "bench": "npm run bench --workspace=runner"
   },
   "workspaces": [
+    "./baseline",
     "./decorators",
     "./legacy-decorators",
     "./make-auto-observable",

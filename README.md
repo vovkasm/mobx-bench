@@ -13,8 +13,9 @@ npm run bench
 On my Macbook Pro M1, with node 18.17.1
 
 ```
-make-auto-observable x 360 ops/sec ±0.21% (92 runs sampled)
-decorators x 483 ops/sec ±0.26% (96 runs sampled)
-legacy-decorators x 340 ops/sec ±0.19% (92 runs sampled)
+make-auto-observable x 322 ops/sec ±0.28% (92 runs sampled)
+baseline x 2,592 ops/sec ±0.06% (101 runs sampled)
+decorators x 469 ops/sec ±0.28% (94 runs sampled)
+legacy-decorators x 302 ops/sec ±0.20% (92 runs sampled)
 Fastest is decorators
 ```
