@@ -1,12 +1,13 @@
-import { action, observable } from "mobx";
+import { action, makeObservable, observable } from "mobx";
 
 class Model {
-  @observable accessor propA = '';
-  @observable accessor propB = '';
-  @observable accessor propC = '';
-  @observable accessor subModels: Child[] = [];
+  @observable propA = '';
+  @observable propB = '';
+  @observable propC = '';
+  @observable subModels: Child[] = [];
 
   constructor() {
+    makeObservable(this);
     for (let i=0; i<10; i++) {
       this.subModels.push(new Child());
     }
@@ -14,9 +15,13 @@ class Model {
 }
 
 class Child {
-  @observable accessor propA = '';
-  @observable accessor propB = '';
-  @observable accessor propC = '';
+  @observable propA = '';
+  @observable propB = '';
+  @observable propC = '';
+
+  constructor() {
+    makeObservable(this);
+  }
 
   @action
   action1() {

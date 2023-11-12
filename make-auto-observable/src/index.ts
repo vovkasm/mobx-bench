@@ -22,6 +22,14 @@ class Child {
   constructor() {
     makeAutoObservable(this);
   }
+
+  action1() {
+    this.innerMethod();
+  }
+
+  private innerMethod() {
+    return true;
+  }
 }
 
 export function benchConstruction(numIterations: number) {
