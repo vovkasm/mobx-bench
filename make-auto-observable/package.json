@@ -9,7 +9,7 @@
     "mobx": "^6.13.5"
   },
   "devDependencies": {
-    "@types/node": "^22.10.1",
+    "@types/node": "^24",
     "typescript": "^5.7.2"
   }
 }

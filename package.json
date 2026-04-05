@@ -18,8 +18,8 @@
   "license": "MIT",
   "devDependencies": {
     "@tsconfig/bun": "^1.0.7",
-    "@tsconfig/node-lts": "^22.0.1",
-    "@tsconfig/node22": "^22.0.0",
+    "@tsconfig/node-lts": "^24.0.0",
+    "@tsconfig/node24": "^24.0.0",
     "bun-types": "^1.1.38"
   }
 }

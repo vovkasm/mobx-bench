@@ -12,6 +12,35 @@ npm run bench
 
 On my Macbook Pro M1
 
+## 2026-04-05
+
+| package | version |
+| --- | --- |
+| node | 24.14.1 |
+| bun | 1.3.11 |
+| typescript | 5.9.3 |
+| mobx | 6.15.0 |
+
+### Node
+
+```
+make-auto-observable x 302 ops/sec ±1.14% (91 runs sampled)
+baseline x 80,762 ops/sec ±0.78% (74 runs sampled)
+decorators x 446 ops/sec ±1.10% (78 runs sampled)
+legacy-decorators x 294 ops/sec ±0.68% (92 runs sampled)
+Fastest is decorators
+```
+
+### Bun
+
+```
+make-auto-observable x 433 ops/sec ±0.45% (89 runs sampled)
+baseline x 117,976 ops/sec ±0.69% (95 runs sampled)
+decorators x 800 ops/sec ±1.32% (88 runs sampled)
+legacy-decorators x 442 ops/sec ±0.49% (91 runs sampled)
+Fastest is decorators
+```
+
 ## 2024-11-30
 
 | package | version |
